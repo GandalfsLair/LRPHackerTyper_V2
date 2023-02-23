@@ -1,0 +1,40 @@
+Keyboard Shortcuts
+
+Data on key codes can be found at keycode.info
+
+Hit the following keys three times and get a pop up with the corresponding message.
+
+1 Scanning for Mobile Device
+2 Hacking Mobile Device
+3 Copying Mobile Device
+4 Scanning Firewall
+5 Bypass Firewll
+6 Disable Firewall
+7 Scan Antivirus
+8 Bypass Antivirus
+9 Disable Antivirus
+0
+Tab Running
+- Scanning Cell Tower
+= Breaching Cell Tower
+esc Remove all Pop ups
+shift Counter Measures Running
+ctrl Virus Detected
+alt Access Granted
+[ Uploading
+] Downloading
+; Malware Running
+'
+# Access Denied
+,
+. Keylogger Deployed
+/
+insert Scanning CCTV
+home CCTV Loop Enabled
+pg up Compiling
+pg dn Cloning
+delete Scanning for Network
+end Scanning
+scr lk Network Located
+pause Mobile Device Located
+

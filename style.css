@@ -1,0 +1,161 @@
+* {
+    /* for demo only*/
+    margin: 0px;
+    padding: 0px
+}
+
+html,
+body {
+    height: 100%;
+    /* needed to base 100% height on something known*/
+    // text-align:center;
+}
+
+.outer {
+    //width:760px;
+    //background:#ffffcc;
+    margin: auto;
+    min-height: 100%;
+    margin-top: 0px;
+    /*footer height - this drags the outer 40px up through the top of the monitor */
+    text-align: left;
+}
+
+* html .outer {
+    height: 100%
+}
+
+#header {
+    //  background:red;
+    border-top: 40px solid #fff;
+    /* soak up negative margin and allows header to start at top of page*/
+}
+
+.footer {
+    /* footer now sits at bottom of window*/
+    //  background:red;
+    //width:760px;
+    margin: auto;
+    height: 40px;
+    /* must match negative margin of #outer */
+    clear: both;
+}
+
+/*Opera Fix*/
+body:before {
+    /* thanks to Maleika (Kohoutec)*/
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+    /* thank you Erik J - negate effect of float*/
+}
+
+h1,
+h2,
+p {
+    padding: 0 10px;
+}
+
+.outer:after {
+    /* thank you Erik J - instead of using display table for ie8*/
+    clear: both;
+    display: block;
+    height: 1%;
+    content: " ";
+}
+
+html,
+body,
+a {
+    background: #000000;
+    color: #00FF00;
+    font-family: monospace;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+    /* the bottom margin is the negative value of the footer's height */
+    background: #0000ff;
+}
+
+.footer,
+.pusha {
+    //	height: 20px; /* .push must be the same height as .footer */
+    //background:#aa00ff;
+}
+
+.accessGranted {
+    position: fixed;
+    top: 200px;
+    background: #333;
+    padding: 20px;
+    border: 1px solid #999;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+}
+
+.accessGrantedflash {
+    position: fixed;
+    top: 200px;
+    background: #333;
+    padding: 20px;
+    border: 1px solid #999;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    animation:blinkingText 0.8s infinite;
+    }
+    @keyframes blinkingText{
+        0%{		color: #333;	}
+        50%{	color: transparent;	}
+        100%{	color:}
+    }
+.accessDenied {
+    position: fixed;
+    top: 200px;
+    color: #F00;
+    background: #511;
+    padding: 20px;
+    border: 1px solid #F00;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+}
+
+.accessDeniedflash {
+    position: fixed;
+    top: 200px;
+    color: #F00;
+    background: #511;
+    padding: 20px;
+    border: 1px solid #F00;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    animation:blinkingText 0.8s infinite;
+        @keyframes blinkingText {
+        0%{		color: #f00;	}
+        50%{	color: transparent;	}
+        100%{	color:} 
+}
+}
+.inverse {
+    background: #00FF00;
+    color: #000000;
+    font-family: monospace;
+    height: 100%;
+}
